@@ -11,8 +11,7 @@ import rx.schedulers.Schedulers
 
 
 object ApiManager {
-    //private const val SERVER: String = "http://localhost:3000/"
-    private const val SERVER: String = "http://192.168.43.147:3000/"
+    private const val SERVER: String = "http://localhost:3000/"
 
     private lateinit var mProcedureService: ProcedureService
 

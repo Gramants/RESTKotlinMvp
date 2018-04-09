@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
@@ -59,8 +59,6 @@ dependencies {
     compile 'io.reactivex:rxkotlin:0.55.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    compile 'com.github.bumptech.glide:glide:4.6.1'
-    kapt 'com.github.bumptech.glide:compiler:4.6.1'
     compile 'com.hendraanggrian:pikasso:0.2'
 
     testCompile 'junit:junit:4.12'

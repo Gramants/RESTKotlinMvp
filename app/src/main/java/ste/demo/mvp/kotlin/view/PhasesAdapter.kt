@@ -12,7 +12,6 @@ import com.hendraanggrian.pikasso.circle
 import com.hendraanggrian.pikasso.picasso
 
 
-
 class PhasesAdapter(private val repositories: MutableList<Phases>,
                     private val onClick: (Phases) -> Unit)
     : RecyclerView.Adapter<PhasesAdapter.ViewHolder>() {
@@ -27,8 +26,8 @@ class PhasesAdapter(private val repositories: MutableList<Phases>,
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return LayoutInflater.from(parent.context)
                 .inflate(R.layout.item, parent, false).let {
-            ViewHolder(it, onClick)
-        }
+                    ViewHolder(it, onClick)
+                }
     }
 
     class ViewHolder(override val containerView: View, private val onClick: (Phases) -> Unit) : RecyclerView.ViewHolder(containerView), LayoutContainer {
@@ -37,7 +36,7 @@ class PhasesAdapter(private val repositories: MutableList<Phases>,
             with(phases) {
                 text_view_title.text = name
 
-                        picasso
+                picasso
                         .load(icon)
                         .circle()
                         .error(R.drawable.errorimage)

@@ -26,8 +26,8 @@ class ProceduresAdapter(private val repositories: MutableList<Procedures>,
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return LayoutInflater.from(parent.context)
                 .inflate(R.layout.item, parent, false).let {
-            ViewHolder(it, onClick)
-        }
+                    ViewHolder(it, onClick)
+                }
     }
 
     class ViewHolder(override val containerView: View, private val onClick: (Procedures) -> Unit) : RecyclerView.ViewHolder(containerView), LayoutContainer {
@@ -36,7 +36,7 @@ class ProceduresAdapter(private val repositories: MutableList<Procedures>,
             with(procedures) {
                 text_view_title.text = name
 
-                        picasso
+                picasso
                         .load(icon)
                         .circle()
                         .error(R.drawable.errorimage)

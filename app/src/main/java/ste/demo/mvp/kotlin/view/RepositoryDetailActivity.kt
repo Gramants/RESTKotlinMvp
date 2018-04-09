@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.Toast
-import com.bumptech.glide.Glide
+import com.hendraanggrian.pikasso.picasso
 import kotlinx.android.synthetic.main.activity_procedure_detail.*
 import ste.demo.mvp.kotlin.R
 import ste.demo.mvp.kotlin.model.Phases
@@ -29,7 +29,7 @@ class RepositoryDetailActivity : BaseMvpActivity<ProcedureDetailsContract.View,
         with(procedureDetail.get(0)) {
             toolbar_detail.title = name
 
-            Glide.with(applicationContext)
+            picasso
                     .load(icon)
                     .into(mainimage)
 
