@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Procedures Client</string>
+    <string name="title_activity_details">Procedure details</string>
+    <string name="title_activity_repositories">Procedures</string>
+    <string name="internet_connection_unavailable">Internet connection unavailable</string>
+    <string name="server_error">Server error</string>
+    <string name="lbl_reload">Reload</string>
+</resources>
